@@ -1,7 +1,6 @@
+# Romanumerals
 ![RSpec](https://github.com/febonazzic/romanumerals/actions/workflows/main.yml/badge.svg)
 [![codecov](https://codecov.io/gh/febonazzic/romanumerals/branch/main/graph/badge.svg?token=3CS44P7B3J)](https://codecov.io/gh/febonazzic/romanumerals)
-
-# Romanumerals
 
 This gem allows you to convert arabic numbers to roman.
 
