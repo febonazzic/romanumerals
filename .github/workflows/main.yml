@@ -5,7 +5,7 @@ on: [push]
 jobs:
   rspec:
     runs-on: ubuntu-latest
-    name: Ruby ${{ matrix.ruby }}
+    name: Rspec
     strategy:
       matrix:
         ruby:
