@@ -1,9 +1,9 @@
-name: Ruby
+name: RSpec
 
 on: [push]
 
 jobs:
-  rspec:
+  build:
     runs-on: ubuntu-latest
     name: Rspec
     strategy:
@@ -13,7 +13,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
@@ -22,3 +21,5 @@ jobs:
 
     - name: Run tests
       run: bundle exec rspec
+      env:
+        CODECOV_TOKEN: ${{secrets.CODECOV_TOKEN}}

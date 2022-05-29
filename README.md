@@ -1,4 +1,4 @@
-![RSpec](https://github.com/febonazzic/romanumerals/actions/workflows/main.yml/badge.svg?label=build)
+![RSpec](https://github.com/febonazzic/romanumerals/actions/workflows/main.yml/badge.svg)
 
 # Romanumerals
 

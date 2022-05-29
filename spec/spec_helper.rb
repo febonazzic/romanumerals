@@ -1,6 +1,13 @@
 # frozen_string_literal: true
 
 require 'romanumerals'
+require 'simplecov'
+require 'codecov'
+
+SimpleCov.start
+SimpleCov.formatter = SimpleCov::Formatter::Codecov
+
+# Previous content of test helper now starts here
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
