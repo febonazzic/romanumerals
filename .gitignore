@@ -1,0 +1,17 @@
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+
+# Ignore IDE files
+/.idea
+
+# rspec failure tracking
+.rspec_status
+
+# Ignore OSX system files
+.DS_Store
