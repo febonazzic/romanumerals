@@ -1,0 +1,9 @@
+module Romanumerals
+  module Numeric
+    def to_roman: -> String
+
+    private
+
+    def decompose: -> Hash[Integer, Integer]
+  end
+end

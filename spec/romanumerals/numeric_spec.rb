@@ -3,6 +3,7 @@
 RSpec.describe Romanumerals::Numeric do
   context Integer do
     describe '#to_roman' do
+      let(:random_number) { rand(1..99_999) }
       let(:examples) do
         {
           1      => 'I',
@@ -29,7 +30,7 @@ RSpec.describe Romanumerals::Numeric do
       end
 
       it 'should return String' do
-        expect(rand(1..99_999).to_roman).to be_a String
+        expect(random_number.to_roman).to be_a String
       end
 
       context 'when a number is zero' do
@@ -39,6 +40,18 @@ RSpec.describe Romanumerals::Numeric do
 
         it 'should return an empty string' do
           expect(0.to_roman).to eq ''
+        end
+      end
+
+      context 'when a number is negative' do
+        let(:negative_number) { random_number * -1 }
+
+        it 'should not raise error' do
+          expect { negative_number.to_roman }.not_to raise_error
+        end
+
+        it 'should return an empty string' do
+          expect(negative_number.to_roman).to eq ''
         end
       end
     end
