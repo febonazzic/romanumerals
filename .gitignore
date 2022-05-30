@@ -7,11 +7,14 @@
 /spec/reports/
 /tmp/
 
-# Ignore IDE files
+# IDE files
 /.idea
 
 # rspec failure tracking
 .rspec_status
 
-# Ignore OSX system files
+# OSX system files
 .DS_Store
+
+# built gem
+*.gem
