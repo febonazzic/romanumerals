@@ -1,0 +1,13 @@
+module Romanumerals
+  DICTIONARY_SORTED_BY_WEIGHT: Hash[String, Integer]
+
+  module String
+    def to_int: -> String
+    def to_roman: -> Integer
+
+    private
+
+    def roman?: -> bool
+    def decompose: -> Hash[String, Integer]
+  end
+end

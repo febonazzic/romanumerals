@@ -1,3 +1,4 @@
 module Romanumerals
   VERSION: String
+  DICTIONARY: Hash[Integer, String]
 end

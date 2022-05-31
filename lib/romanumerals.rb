@@ -2,6 +2,7 @@
 
 require_relative 'romanumerals/version'
 require_relative 'romanumerals/numeric'
+require_relative 'romanumerals/string'
 
 module Romanumerals
   class Error < StandardError; end
