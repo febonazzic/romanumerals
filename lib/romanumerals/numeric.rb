@@ -18,7 +18,7 @@ module Romanumerals
     private
 
     def decompose
-      number = self
+      number = dup
 
       DICTIONARY.keys.each_with_object({}) do |divider, result|
         dividers_count = number / divider
