@@ -2,10 +2,10 @@
 
 require 'romanumerals'
 require 'simplecov'
-require 'codecov'
+# require 'codecov'
 
 SimpleCov.start
-SimpleCov.formatter = SimpleCov::Formatter::Codecov
+# SimpleCov.formatter = SimpleCov::Formatter::Codecov
 
 # Previous content of test helper now starts here
 
