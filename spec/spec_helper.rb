@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 require 'romanumerals'
-require 'simplecov'
+# require 'simplecov'
 # require 'codecov'
 
-SimpleCov.start
+# SimpleCov.start
 # SimpleCov.formatter = SimpleCov::Formatter::Codecov
 
 # Previous content of test helper now starts here
