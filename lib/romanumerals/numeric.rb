@@ -6,12 +6,7 @@ module Romanumerals
       return '' if zero?
 
       decompose.each_with_object([]) do |(divider, count), result|
-        result <<
-          if count == 4
-            DICTIONARY[divider] + DICTIONARY[divider * 5]
-          else
-            DICTIONARY[divider] * count
-          end
+        result << DICTIONARY[divider] * count
       end.join
     end
 
