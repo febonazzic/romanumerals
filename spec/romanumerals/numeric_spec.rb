@@ -17,6 +17,7 @@ RSpec.describe Romanumerals::Numeric do
           1509   => 'MDIX',
           1550   => 'MDL',
           2022   => 'MMXXII',
+          4218   => 'MMMMCCXVIII',
           6443   => 'MMMMMMCDXLIII',
           9463   => 'MMMMMMMMMCDLXIII',
           11_197 => 'MMMMMMMMMMMCXCVII'
