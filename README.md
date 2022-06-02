@@ -18,6 +18,7 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 Usage is very simple:
 
+#### Convert to roman:
 ```ruby
 10.to_roman # => "X" 
 110.to_roman # => "CX" 
@@ -25,6 +26,23 @@ Usage is very simple:
 845.to_roman # => "DCCCXLV"
 1193.to_roman # => "MCXCIII"
 2022.to_roman # => "MMXXII"
+```
+
+#### Convert from roman:
+```ruby
+'MMXXII'.to_numeral # => 2022
+```
+
+#### Other cases:
+```ruby
+0.to_roman # => ""
+11.9.to_roman # => "XI"
+
+# If a string does not contain roman numerals then the String#to_i will be used 
+''.to_numeral # => 0
+'0'.to_numeral # => 0
+'XIIi'.to_numeral # => 0
+'5 contributors'.to_numeral # => 5
 ```
 
 ## Contributing
