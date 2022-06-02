@@ -18,7 +18,7 @@ module Romanumerals
   }.freeze
 
   module String
-    def to_int
+    def to_numeral
       return to_i unless roman?
 
       decompose.map { |value, count| DICTIONARY_SORTED_BY_WEIGHT[value] * count }.sum

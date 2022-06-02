@@ -2,7 +2,7 @@
 
 RSpec.describe Romanumerals::String do
   context String do
-    describe '#to_int' do
+    describe '#to_numeral' do
       let(:examples) do
         {
           'II'                => 2,
@@ -20,36 +20,36 @@ RSpec.describe Romanumerals::String do
 
       it 'should return a correct integer' do
         examples.each do |roman, integer|
-          expect(roman.to_int).to eq integer
+          expect(roman.to_numeral).to eq integer
         end
       end
 
       it 'should return Integer' do
-        expect('LIX'.to_int).to be_a Integer
+        expect('LIX'.to_numeral).to be_a Integer
       end
 
       context 'when a string is zero' do
         it 'should not raise error' do
-          expect { 0.to_int }.not_to raise_error
+          expect { '0'.to_numeral }.not_to raise_error
         end
 
         it 'should return the zero' do
-          expect('0'.to_int).to eq 0
+          expect('0'.to_numeral).to eq 0
         end
       end
 
       context 'when a string is empty' do
         it 'should return the zero' do
-          expect(''.to_int).to eq 0
+          expect(''.to_numeral).to eq 0
         end
       end
 
       context 'when a string is not a roman' do
         it 'should return result of #to_i' do
-          expect('any string'.to_int).to eq 0
-          expect('any 55 strings'.to_int).to eq 0
-          expect('55 any strings'.to_int).to eq 55
-          expect('X VI'.to_int).to eq 0
+          expect('any string'.to_numeral).to eq 0
+          expect('any 55 strings'.to_numeral).to eq 0
+          expect('55 any strings'.to_numeral).to eq 55
+          expect('X VI'.to_numeral).to eq 0
         end
       end
     end

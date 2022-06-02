@@ -2,12 +2,12 @@ module Romanumerals
   DICTIONARY_SORTED_BY_WEIGHT: Hash[String, Integer]
 
   module String
-    def to_int: -> String
-    def to_roman: -> Integer
+    def to_numeral: -> Integer
+    def to_roman: -> ::String
 
     private
 
     def roman?: -> bool
-    def decompose: -> Hash[String, Integer]
+    def decompose: -> Hash[::String, Integer]
   end
 end
