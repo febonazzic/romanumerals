@@ -25,12 +25,12 @@ Usage is very simple:
 99.to_roman # => "XCIX"
 845.to_roman # => "DCCCXLV"
 1193.to_roman # => "MCXCIII"
-2022.to_roman # => "MMXXII"
+2024.to_roman # => "MMXXIV"
 ```
 
 #### Convert from roman:
 ```ruby
-'MMXXII'.to_numeral # => 2022
+'MMXXIV'.to_numeral # => 2024
 ```
 
 #### Other cases:
